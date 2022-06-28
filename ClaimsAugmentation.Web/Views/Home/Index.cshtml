@@ -1,0 +1,23 @@
+﻿<!--
+//===============================================================================
+// Microsoft FastTrack for Azure
+// Claims Augmentation Example
+//===============================================================================
+// Copyright © Microsoft Corporation.  All rights reserved.
+// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// FITNESS FOR A PARTICULAR PURPOSE.
+//===============================================================================
+-->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h2 class="display-4">Claims Augmentation Example</h2>
+    @if (User.IsInRole("Admin"))
+    {
+        <p>@ViewBag.WeatherForecast</p>
+    }
+</div>
